@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="tip">
+        (Click anywhere to hear sound...)
+    </div>
+    <p id="current_metronome_count"></p>
+    <div>
+        <input type="checkbox" id="metronome" value="metronome">
+        <label for="metronome">Metronome</label>
+        <input type="checkbox" id="kick-drum" value="kick-drum">
+        <label for="kick-drum">Kick drum</label>
+        <input type="checkbox" id="snare-drum" value="snare-drum">
+        <label for="snare-drum">Snare drum</label>
+        <input type="checkbox" id="hi-hat" value="hi-hat">
+        <label for="hi-hat">Hi hat</label>
+
+    </div>
+    <div>
+        <input class="inputs" id="kick-drum-timing1" type="number" min="1" max="4" placeholder="Timing inputs value">
+        <input class="inputs" id="kick-drum-timing2" type="number" min="1" max="4" placeholder="Timing inputs value">
+        <input class="inputs" id="metrome-counts" type="number" min="1" max="40" placeholder="Mam metrome counts value">
+    </div>
+    <div class="metronome">
+        <div class="background-left"></div>
+        <div class="background-center">
+            <div class="core"></div>
+        </div>
+        <div class="background-right"></div>
+        <div class="arm"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
